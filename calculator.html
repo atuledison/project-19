@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodesByEdison-Home</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .wrap{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            width: 100%;
+            height: 100vh;
+
+            background-color: rgb(44, 44, 44);
+
+        }
+        .cal-box{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* justify-content: center; */
+
+            height: 400px;
+            width: 250px;
+
+            background-color: rgb(26, 26, 26);
+            border-radius: 10px;
+           box-shadow: 1px 1px 5px rgb(30, 30, 30), 1px 1px 10px rgb(52, 50, 50), 1px 1px 15px rgb(52, 50, 50);
+            padding: 10px;
+        }
+        .display-box{
+            width: 100%;
+            height: 30%;
+            margin-bottom: 20px;
+        }
+        #display{
+            width: 100%;
+            height: 100%;
+            border-style: none;
+            border-radius: 5px;
+            outline: none;
+            background-color: aquamarine;
+            box-shadow: 1px 1px 5px black;
+            
+        }
+        .button-box{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+        button{
+            width: 20%;
+            height: 40px;
+            font-size: 17px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+
+            border-radius: 5px;
+            border: none;
+            background: transparent;
+            color: white;
+            /* box-shadow: 1px 1px 5px black; */
+        }
+        button:active, .spi:active{
+            transform: scale(0.95);
+        }
+        button:hover{
+            color: orange;
+        }
+        .spi{
+            background-color: rgb(90, 226, 226);
+            color: black;
+            box-shadow: 1px 1px 5px black;
+            transition: all 0.2s 0s ease;
+        }
+        .spi:hover{
+            color: rgb(255, 55, 55);
+            transform: scale(1.05);
+        }
+        .spi1{
+            background-color: red;
+        }
+        .spi1:hover{
+            background-color: black;
+            color: white;
+        }
+        #equal{
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="cal-box">
+            <div class="display-box"><input type="text" name="text" id="display"></div>
+            <div class="button-box">
+                <button type="submit" class="spi spi1">C</button>
+                <button type="submit" class="spi spi1">AC</button>
+                <button type="submit">%</button>
+                <button type="submit" class="spi">/</button>
+                <button type="submit">7</button>
+                <button type="submit">8</button>
+                <button type="submit">9</button>
+                <button type="submit" class="spi">x</button>
+                <button type="submit">4</button>
+                <button type="submit">5</button>
+                <button type="submit">6</button>
+                <button type="submit" class="spi">-</button>
+                <button type="submit">1</button>
+                <button type="submit">2</button>
+                <button type="submit">3</button>
+                <button type="submit" class="spi">+</button>
+                <button type="submit">H</button>
+                <button type="submit">0</button>
+                <button type="submit">.</button>
+                <button type="submit" class="spi" id="equal">=</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
